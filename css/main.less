@@ -51,7 +51,7 @@ table {
    Varialble less
    ========================================================================== */
 .three-colscont(){
-width: 19.125em;
+width: 18.53em;
 display: inline-block;
 margin-right: 1.6em;
 list-style-type: none;  
@@ -67,6 +67,7 @@ vertical-align: top;
 
 @yellow:#f6a313;
 @textgrey:#EEE;
+@red:#C73434;
 
 
 /* ==========================================================================
@@ -120,7 +121,7 @@ vertical-align: top;
 }
 
 body{
-	font-size: 16px;
+	font-size: 16.5px;
 	font-family: 'nexa_regularregular';
 	background-image: url('../img/bckg.png');
 	background-repeat: repeat;
@@ -130,6 +131,18 @@ body{
 h2{
 	font-size: 1.5em;
 	margin-top: 1.5em;
+	font-family: 'nexa_heavyregular';
+}
+
+h3{
+	font-size: 1.5em;
+	margin-top: 1.3em;
+	font-family: 'nexa_heavyregular';
+}
+
+h4{
+	font-size: 1.5em;
+	margin-top: 0.9em;
 	font-family: 'nexa_heavyregular';
 }
 
@@ -155,6 +168,10 @@ p{
 	color: red;
 }
 
+.common{
+	color:@red;
+}
+
 
 
 /* ==========================================================================
@@ -162,8 +179,8 @@ p{
    ========================================================================== */
 
 .accContainer{
-
-	max-width: 61.1em;  /*12 column width:54 gutter:30  1008px*/ 
+	  /*12 column width:54 gutter:30  1008px*/ 
+	max-width: 59.3em;
 	margin: 0 auto;
 
 }
@@ -257,7 +274,7 @@ margin-bottom: 4em;
 }
 
 .feed{
-	width: 19.18em;
+	width: 18.53em;
 	display: inline-block;
 	margin-right: 3.3em;
 	list-style: none;
@@ -331,6 +348,7 @@ margin-bottom: 4em;
 	margin-top: 2.8em;
 	vertical-align: top;
 	height: 7.5em;
+	clear:both;
 }
 
 .footer .container{
@@ -346,7 +364,7 @@ margin-bottom: 4em;
 }
 
 input[type="submit"]{
-	height: 44px;
+	height:3.21em;
 	width: 64px;
 	vertical-align: middle;
 }
@@ -367,7 +385,7 @@ input[type="email"]{
 	float:left;
 	
 	th{
-		padding: 1em;
+		padding: 0.6em;
 		background-color: white;
 		color: black;
 		text-align: left;
@@ -379,17 +397,126 @@ input[type="email"]{
 		color: white;
 	}
 
-	tr:nth-child(2n+1){
+	tr:nth-child(odd){
 		background-color: #c73434;
 	}
 
 	td{
 		padding: 0.35em 0em 0.35em 1em;
+		vertical-align: middle;
 	}
 }
 
+
+.agenda h2{
+	margin-top: 0.5em;
+}
 .eventDetails{
-	width: 22.8%;
+	width: 19.1%;
 	float: right;
+	background-color: white;
+	margin-top: 1.4em;
+	padding: 1em;
+
+	h3{
+		margin-top: 0;
+	}
+
+	h4{
+		font-size: 1.2em;
+		margin-top: 0.7em;
+	}
 }
 
+.map img{
+	margin-top: 2.8em;
+}
+
+.infosup{
+	clear:both;
+	display:inline-block;
+}
+
+.ceQuOnJoue {
+width: 48.5%;
+margin-right: 29px;
+float: left;
+}
+
+#wrapform{
+    margin:2.5em 0em 2.5em 0em;
+}
+
+#wrapform form {
+    float: left;
+    width: 48.5%;
+    margin-right: 30px;
+}
+
+#fieldcontact{
+    background-color: rgba(112, 112, 112, 0.2);
+    padding: 2em 2.5em 2em 2em;
+    max-width: 24.3em;
+    max-height: 95%;
+}
+
+#wrapform label{
+    display: block;
+    width:10em;
+    float:left;
+    clear:left;
+    margin: 1.5em 1em 0 0;
+    font-weight: 700;
+    color: #707070;
+    text-shadow:1px 1px 0 0 ;
+}
+
+#wrapform #email, #wrapform #name{
+    display: block;
+    width: 16em;
+    height: 1.5em;
+    margin: 1em 0em 0 0;
+    border-radius:5px;  
+}
+
+#wrapform textArea{
+    min-width: 97%;
+    max-width:100%;
+    height:10em;
+    margin: 0.3em 0em 0 0;
+    border:2px inset;
+    border-radius:5px;
+}
+
+#sending{
+    float:right;
+    display:inline;
+    margin: 2em -0.3em 0em 0em;
+    clear:both;
+    margin-left: 2em;
+    text-align: center;
+    background-color: rgba(112, 112, 112, 0.4);
+    border:none;
+    color:#FFFFFF;
+    font-family: 'Rockwell', sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    border-radius:5px;
+    padding: 1em;
+
+    &:hover{
+    	color:@red;
+    }
+}
+
+#wrapform #name,#wrapform #email,#wrapform #message{
+    padding:0.5em;
+    font-family: 'Open Sans', sans-serif;
+    color: #E5E5E5;
+}
+
+
+#map{
+    width:38%;
+    float:left;
+}
